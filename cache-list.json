@@ -1,0 +1,16 @@
+[ 
+  "generate-cache-list.bat", 
+  "index.html", 
+  "posts.json", 
+  "seen.html", 
+  "view.html", 
+  "avatars/love.png", 
+  "avatars/mountain.png", 
+  "script/core.js", 
+  "script/seen.js", 
+  "script/sw-register.js", 
+  "script/sw.js", 
+  "script/view.js", 
+  "style/main.css", 
+  "cache-list.json" 
+] 

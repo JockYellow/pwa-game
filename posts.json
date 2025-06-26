@@ -1,0 +1,23 @@
+[
+    {
+      "id": "001",
+      "password": "hiking2025",
+      "author": "山到猴吱",
+      "avatar": "avatars/mountain.png",
+      "platform": "IG",
+      "timestamp": "2025-07-03 04:57",
+      "content": "今天四點起床去登山！雖然整座山霧茫茫，但我覺得這才是最清爽的瞬間。",
+      "tags": ["戶外", "登山", "早起"]
+    },
+    {
+      "id": "002",
+      "password": "secretLove",
+      "author": "戀愛腦",
+      "avatar": "avatars/love.png",
+      "platform": "Thread",
+      "timestamp": "2025-07-05 13:21",
+      "content": "明明不是我喜歡的活動，但只因為他報名了，我就填表了。現在還在幫他拍照中...",
+      "tags": ["暗戀", "限動", "跟拍"]
+    }
+  ]
+  

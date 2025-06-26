@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>解鎖貼文</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <h2>輸入密碼以查看貼文</h2>
+  <input type="password" id="passwordInput" placeholder="請輸入密碼">
+  <button onclick="unlockPost()">解鎖</button>
+
+  <div id="postContainer"></div>
+  <button onclick="location.href='index.html'">🔙 回首頁</button>
+
+  <script src="script/core.js"></script>
+  <script src="script/view.js"></script>
+  <script src="script/sw-register.js"></script>
+</body>
+</html>

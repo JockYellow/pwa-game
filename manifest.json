@@ -1,0 +1,21 @@
+{
+    "name": "在暑假被手機偷走之前，我的文被推爆了",
+    "short_name": "推爆遊戲",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a90e2",
+    "icons": [
+      {
+        "src": "avatars/m.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "avatars/s.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

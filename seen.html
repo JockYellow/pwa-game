@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>已解鎖貼文</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <h2>你已解鎖的貼文</h2>
+  <div id="seenPosts"></div>
+
+  <button onclick="clearUnlocked()">🗑️ 清除紀錄</button>
+  <button onclick="location.href='index.html'">🔙 回首頁</button>
+
+  <script src="script/core.js"></script>
+  <script src="script/seen.js"></script>
+  <script src="script/sw-register.js"></script>
+</body>
+</html>
