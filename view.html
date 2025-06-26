@@ -9,7 +9,7 @@
 </head>
 <body>
   <h2>輸入密碼以查看貼文</h2>
-  <input type="password" id="passwordInput" placeholder="請輸入密碼">
+  <input type="password" id="passwordInput" inputmode="numeric" pattern="[0-9]*" placeholder="請輸入密碼">
   <button onclick="unlockPost()">解鎖</button>
 
   <div id="postContainer"></div>
