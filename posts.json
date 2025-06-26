@@ -1,7 +1,7 @@
 [
     {
       "id": "001",
-      "password": "hiking2025",
+      "password": "001",
       "author": "山到猴吱",
       "avatar": "avatars/mountain.png",
       "platform": "IG",
@@ -11,7 +11,7 @@
     },
     {
       "id": "002",
-      "password": "secretLove",
+      "password": "002",
       "author": "戀愛腦",
       "avatar": "avatars/love.png",
       "platform": "Thread",
