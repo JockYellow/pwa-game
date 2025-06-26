@@ -1,16 +1,18 @@
 [ 
-  "generate-cache-list.bat", 
-  "index.html", 
-  "posts.json", 
-  "seen.html", 
-  "view.html", 
-  "avatars/love.png", 
-  "avatars/mountain.png", 
-  "script/core.js", 
-  "script/seen.js", 
-  "script/sw-register.js", 
-  "script/sw.js", 
-  "script/view.js", 
-  "style/main.css", 
   "cache-list.json" 
+, "index.html" 
+, "manifest.json" 
+, "posts.json" 
+, "seen.html" 
+, "view.html" 
+, "avatars/love.png" 
+, "avatars/m.png" 
+, "avatars/mountain.png" 
+, "avatars/s.png" 
+, "script/core.js" 
+, "script/seen.js" 
+, "script/sw-register.js" 
+, "script/sw.js" 
+, "script/view.js" 
+, "style/main.css" 
 ] 

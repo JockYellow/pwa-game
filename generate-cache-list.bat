@@ -1,36 +1,43 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-:: 檔案名稱
 set OUTPUT_FILE=cache-list.json
 
-:: 初始化 JSON 字串
+:: 開始寫入 JSON 陣列開頭
 echo [ > %OUTPUT_FILE%
 
-:: 遍歷所有檔案
+:: 初始化變數
+set firstLine=true
+
+:: 遞迴掃描檔案
 for /R %%f in (*) do (
     set "filepath=%%f"
     set "relpath=%%f"
     set "relpath=!relpath:%CD%\=!"
 
-    :: 移除開頭反斜線
+    :: 去除開頭反斜線
     if "!relpath:~0,1!"=="\" set "relpath=!relpath:~1!"
 
-    :: 替換為正斜線
+    :: 替換反斜線為正斜線
     set "relpath=!relpath:\=/!"
 
-    :: 排除自己重複寫入（最後統一加）
-    if /I not "!relpath!"=="%OUTPUT_FILE%" (
-        echo   "!relpath!", >> %OUTPUT_FILE%
+    :: 忽略 .git 資料夾與這個 .bat 自己
+    echo !relpath! | findstr /I /C:".git/" >nul
+    if errorlevel 1 (
+        if /I not "!relpath!"=="generate-cache-list.bat" (
+            if "!firstLine!"=="true" (
+                echo   "!relpath!" >> %OUTPUT_FILE%
+                set firstLine=false
+            ) else (
+                echo , "!relpath!" >> %OUTPUT_FILE%
+            )
+        )
     )
 )
 
-:: 最後加上自己
-echo   "%OUTPUT_FILE%" >> %OUTPUT_FILE%
-
-:: 收尾
+:: 結束 JSON 陣列
 echo ] >> %OUTPUT_FILE%
 
 echo.
-echo ✅ cache-list.json 已產生。
+echo ✅ 已產生 cache-list.json
 pause
